@@ -9,7 +9,7 @@ Day 3: + "tutoring_mode" (hint_first/direct_answer - Socratic teaching),
          document, answer from general knowledge, clearly labeled).
 """
 from groq import Groq
-from app.config import GROQ_API_KEY, GROQ_MODEL
+from config import GROQ_API_KEY, GROQ_MODEL
 
 _client = Groq(api_key=GROQ_API_KEY) if GROQ_API_KEY else None
 
