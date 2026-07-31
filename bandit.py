@@ -14,7 +14,7 @@ State per (bandit_name, session_id) JSON file-ல் local-ஆ persist ஆகு
 import json
 import os
 import random
-from app.config import BANDIT_STATE_PATH, BANDIT_EPSILON
+from config import BANDIT_STATE_PATH, BANDIT_EPSILON
 
 STYLES = ["analogy", "summary", "detailed"]
 TUTORING_MODES = ["hint_first", "direct_answer"]
