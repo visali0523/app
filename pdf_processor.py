@@ -2,7 +2,7 @@
 PDF-ஐ படிச்சு, text extract பண்ணி, சிறு chunks-ஆ பிரிக்கும் module.
 """
 from pypdf import PdfReader
-from app.config import CHUNK_SIZE, CHUNK_OVERLAP
+from config import CHUNK_SIZE, CHUNK_OVERLAP
 
 
 def extract_text_by_page(pdf_path: str) -> list[dict]:
