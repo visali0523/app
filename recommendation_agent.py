@@ -7,8 +7,8 @@ to produce:
   - next_topics: concepts NOT yet attempted whose prerequisites are all
     mastered (readiness = fraction of prerequisites mastered)
 """
-from app.agents import knowledge_tracing_agent as kt
-from app.agents import knowledge_graph_agent as kg
+import knowledge_tracing_agent as kt
+import knowledge_graph_agent as kg
 
 
 def recommend(session_id: str) -> dict:
