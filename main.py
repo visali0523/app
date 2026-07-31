@@ -14,18 +14,18 @@ from fastapi import FastAPI, UploadFile, File, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
-from app.config import UPLOAD_DIR
-from app.pdf_processor import process_pdf
-from app.vector_store import add_chunks, query_chunks, list_documents, delete_document
-from app.groq_client import generate_answer
-from app import bandit
-from app.agents import memory_agent
-from app.agents import knowledge_tracing_agent as kt
-from app.agents import knowledge_graph_agent as kg
-from app.agents import recommendation_agent as rec
-from app.agents import mentor_agent
-from app.agents import orchestrator
-from app.agents import challenge_agents as challenge_agent  # Day 4: MCQ test + project suggestions
+from config import UPLOAD_DIR
+from pdf_processor import process_pdf
+from vector_store import add_chunks, query_chunks, list_documents, delete_document
+from groq_client import generate_answer
+import bandit
+from agents import memory_agent
+from agents import knowledge_tracing_agent as kt
+from agents import knowledge_graph_agent as kg
+from agents import recommendation_agent as rec
+from agents import mentor_agent
+from agents import orchestrator
+from agents import challenge_agents as challenge_agent  # Day 4: MCQ test + project suggestions
 
 app = FastAPI(
     title="AI-Optimized Learning Engine",
