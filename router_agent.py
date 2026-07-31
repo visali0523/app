@@ -10,7 +10,7 @@ Router Agent (Intelligent Router)
 சொல்லாம, intelligently general knowledge-க்கு switch ஆகும் (Hybrid RAG).
 """
 import re
-from app.config import RAG_RELEVANCE_THRESHOLD
+from config import RAG_RELEVANCE_THRESHOLD
 
 # மாணவனோட progress/history பத்தி கேட்கிற மாதிரி keywords/patterns
 _MEMORY_PATTERNS = [
