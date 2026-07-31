@@ -6,7 +6,7 @@ mistakes in SQLite so they survive a server restart.
 """
 from datetime import datetime, timezone
 
-from app.agents.db import get_connection
+from agents.db import get_connection
 
 
 def init_db():
