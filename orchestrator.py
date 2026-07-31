@@ -13,11 +13,11 @@ Full pipeline for a single question:
   6. Quality Checker: retrieval score threshold + LLM self-refusal text check.
   7. Log the exchange to the Memory Agent.
 """
-from app.vector_store import query_chunks
-from app.groq_client import generate_answer, generate_general_answer, extract_concept
-from app import bandit
-from app.agents import knowledge_tracing_agent as kt
-from app.agents import memory_agent
+from vector_store import query_chunks
+from groq_client import generate_answer, generate_general_answer, extract_concept
+import bandit
+import knowledge_tracing_agent as kt
+import memory_agent
 
 RAG_CONFIDENCE_THRESHOLD = 0.45
 
