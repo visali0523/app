@@ -11,8 +11,8 @@ returns a dict shaped {"answer": "..."} — we build the prompt text here
 and unwrap the "answer" key, falling back to a fixed message if the LLM
 call fails for any reason.
 """
-from app.agents import knowledge_tracing_agent as kt
-from app.groq_client import generate_mentor_message
+import knowledge_tracing_agent as kt
+from groq_client import generate_mentor_message
 
 MENTOR_SYSTEM_INSTRUCTION = "You are a warm, encouraging AI learning mentor."
 
