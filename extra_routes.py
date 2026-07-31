@@ -33,8 +33,8 @@ from datetime import datetime, timezone
 from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel
 
-from app.vector_store import query_chunks
-from app.groq_client import (
+from vector_store import query_chunks
+from groq_client import (
     generate_answer,
     generate_general_answer,
     extract_concept,
@@ -42,7 +42,7 @@ from app.groq_client import (
     generate_mentor_message,
     generate_project_ideas,
 )
-from app import bandit
+import bandit
 
 router = APIRouter()
 
