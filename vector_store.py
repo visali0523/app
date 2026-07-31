@@ -6,7 +6,7 @@ Local embedding model (sentence-transformers) பயன்படுத்து�
 """
 import chromadb
 from chromadb.utils import embedding_functions
-from app.config import CHROMA_DB_PATH, EMBEDDING_MODEL, TOP_K
+from config import CHROMA_DB_PATH, EMBEDDING_MODEL, TOP_K
 
 _client = chromadb.PersistentClient(path=CHROMA_DB_PATH)
 
