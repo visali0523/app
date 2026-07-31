@@ -10,8 +10,8 @@ Tutoring Decision Engine (Adaptive Learning Agent + RL Reward Engine glue)
 இதுவே "Adaptive Difficulty" மற்றும் "No Learning Strategy" (AI-ஐயே சார்ந்திருக்குறது)
 problems-ஐ தீர்க்கிறது.
 """
-from app import bandit
-from app.agents import knowledge_tracing_agent as kt
+import bandit
+import knowledge_tracing_agent as kt
 
 
 def decide_strategy(session_id: str, concept: str | None, style_override: str = "auto",
