@@ -18,7 +18,7 @@ string, not a list — suggest_project() passes just the one concept through.
 import json
 import uuid
 
-from app.groq_client import generate_mcqs, generate_project_ideas
+from groq_client import generate_mcqs, generate_project_ideas
 
 # test_id -> {"session_id", "concept", "questions": [{"question","options","correct_index"}, ...]}
 _tests_db: dict[str, dict] = {}
